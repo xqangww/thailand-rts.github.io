@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngeFly</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body animate__animated animate__rotateInDownLeft>
+    <header>
+        <section class="headers">
+            <nav>
+                <img src="Untitled design.png" class="logo" width="80"/>
+                <a href="#tariffs" class="link">Tariffs</a>
+                <a href="#foto" class="link">Attractions</a>
+                <a href="#quastion" class="link">Ask quastions</a>
+                <a href="#book" class="txt">Book</a>
+            </div>
+            </nav>
+        </section>
+        <section class="title-block">
+            <section class="header-block">
+                <h1 class="title">In <b>Thailand</b> interesting</h1>
+                <p class="subtitle">Do you want to have a good rest?<br>
+                    Go on an amazing trip to Thailand, <br>take your friends or family</p>
+            </section>
+        </section>
+        
+        <img src="png-transparent-bangkok-graphy-thailand-flag-of-thailand-place-of-worship-stock-photography.png" class="eiffel" width="900" height="1500"/>
+        
+    </header>
+    <main>
+        <section class="headers-block">
+            <form class="dateForm" id="book">
+                <h1 class="titles">Choose date and booked
+                    <b>travel</b></h1>
+                <input type="date" placeholder="Date"/>
+                <input type="text" placeholder="Name"/>
+                <input type="tel" placeholder="Phone"/>
+                <a href="#" class="txt" onclick="login()">Search tour</a>
+            </form>
+        </section>
+        <section class="ariffs" id="tariffs">
+            <h1 class="blocked-title">Tariffs</h1>
+            <div class="tariff-block">
+            <div class="tariff">
+                <h3>Economy</h3>
+                <p>For those, who care <br><b>where</b></p>
+                <p>You will fly on <br>plane </p>
+                <h3>100 $</h3>
+                <img class="half-circle" src="half-circle 1 (1).png" />
+            </div>
+            <div class="tariff">
+                <h3>Business</h3>
+                <p>For those, who care <br><b>comfort</b></p>
+                <p>You will fly on<br>comfort</p>
+                <h3>500 $</h3>
+                <img class="half-circle" src="half-circle 1 (1).png" />
+            </div>
+            <div class="tariff">
+                <h3>VIP</h3>
+                <p>For those, who care <br><b>privacy</b></p>
+                <p>Private seat on the <br>plane</p>
+                <h3>1000 $</h3>
+                <img class="half-circle" src="half-circle 1 (1).png" />
+            </div>
+            </div>
+            <a href="#" class="txt-date" onclick="login()">Choose date</a>
+        </section>
+        <div class="container-about" id="foto">
+            <h1>Attractions</h1>
+            <div class="cardss">
+                <div class="card">
+                    <img src="239a86cdee54aff40edf2c430012f627-scaled.png" width="200"/>
+                    <p>Храм Ват Чалонг на Пхукете был основан двумя монахами (Луанг Пхо Чем и Луанг По Чуан)</p>
+                </div>
+                <div class="card">
+                    <img src="G-vC7JMgv3Q.png" width="200"/>
+                    <p>Ват Арун буддийский храм (ват) в районе Бангкок Яй в Бангкоке, Таиланд.</p>
+                </div>
+                <div class="card">
+                    <img src="pochemu-stoit-poehat-na-otdyh-3806.png" width="200"/>
+                    <p>Храм Плай Лаем одно из лучших мест для посещения на острове Самуи.</p>
+                </div>
+            </div>
+            <br>
+            <div class="cards">
+                <div class="card">
+                    <img src="Wat_Rong_Khun_o_el_Templo_blanco_de_Chiang_Rai,_Tailanda._(17381086086).jpg" width="200"/>
+                    <p>Ват Ронг Кхун – он же Белый Храм в городе Чианграй, Таиланд.</p>
+                </div>
+                <div class="card">
+                    <img src="5fda670293d34b1bfaff.jpg" width="200"/>
+                    <p>Великий Будда Пхукета — статуя Маравии Будды на Пхукете. Находится на вершине холма Наккерд.</p>
+                </div>
+                <div class="card">
+                    <img src="3574602.jpg.crdownload" width="200"/>
+                    <p>Тропический ботанический сад Нонг Нуч, достопримечательность в провинции Чонбури, Таиланд</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="video-block">
+        
+            <video width="720"  class="video" src="Y2mate.mx-Thailand _ Cinematic Travel Video _ Stock Footage-(720p).mp4"  autoplay loop muted></video>
+        </div>
+        <div class="quastions" id="quastion">
+            <h1 class="footer-title">Any questions left?</h1>
+            <form class="svForm"></form>
+                <h3 class="form-sub">Write to us and we can find <br> optimal tavel conditions</h3>
+                <input class="inp" type="text" placeholder="Name"/>
+                <input class="inp" type="tel" placeholder="Number"/>
+                <p><a href="#" class="txt-d" onclick="login()">Flew away</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+</html>
